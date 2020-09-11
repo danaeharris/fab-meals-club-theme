@@ -215,16 +215,31 @@ h2 a {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 50px 100px;
 }
-.recipe-image-container {
+.post-thumbnail {
+  margin: 30px;
+}
+.post-image-container {
   width: 200px;
   height: 150px;
   overflow: hidden;
 }
-.recipe-container h2 {
+
+.posts-container h2 {
   font-size: 18px;
 }
-
+.post-info {
+  background-color: #fafafa;
+  font-size: 10px;
+}
+.post-info a {
+  font-size: 12px;
+}
+.entry-title {
+  margin: 0;
+}
 /* Grouping content
 	 ========================================================================== */
 

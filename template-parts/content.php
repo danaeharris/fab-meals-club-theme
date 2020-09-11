@@ -9,13 +9,13 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<article class="post-thumbnail" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 
-<div class="recipe-image-container">
+<div class="post-image-container">
 <?php example_post_thumbnail(); ?>
 </div>
-	<header class="entry-header">
+	<div class="post-info">
 		<?php
 		if ( is_singular() ) :
 			the_title( '<h1 class="entry-title">', '</h1>' );
@@ -32,9 +32,9 @@
 			</div><!-- .entry-meta -->
 			<div class="author">
 				<?php example_posted_by(); ?>
-		</div>
+			</div>
 		<?php endif; ?>
-	</header><!-- .entry-header -->
+	</div><!-- .entry-header -->
 
 
 	<div class="entry-content">
