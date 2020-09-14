@@ -11,7 +11,7 @@
 
 ?>
 
-	<footer id="colophon" class="site-footer">
+	<footer id="colophon" class="site-footer container">
 		<div class="site-info">
 		<p>
 		Danae is learning to be a Wordpress developer expert.

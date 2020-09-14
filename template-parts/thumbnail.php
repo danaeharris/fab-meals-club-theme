@@ -8,10 +8,10 @@
  */
 
 ?>
-<div class="container">
+<div class="post-card">
 	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<?php example_post_thumbnail(); ?>
-		<div>
+		<div class="post-info">
 			<?php
 			if ( is_singular() ) :
 				the_title( '<h1 class="entry-title">', '</h1>' );
@@ -29,17 +29,9 @@
 				<div class="author">
 					<?php example_posted_by(); ?>
 				</div>
-				<div class="blog-post">
-				<?php echo get_post_meta($post->ID, 'blog_post', true); ?>
-				<p>Check out the full recipe at the original blog post</p>
-				<a href=<?php echo get_post_meta($post->ID, 'recipe_link', true); ?>>
-					<?php echo " " . get_post_meta($post->ID, 'slug', true); ?>
-				</a>
-				
-				</div>
 			<?php endif; ?>
 		</div><!-- .entry-header -->
-		<div class="entry-content">
+		<div class="post-content">
 			<?php
 			the_content(
 				sprintf(
@@ -63,11 +55,6 @@
 				)
 			);
 			?>
-		</div><!-- .entry-content -->
-
-		<footer class="entry-footer">
-			<?php example_entry_footer(); ?>
-		</footer><!-- .entry-footer -->
-	<!-- #post-<?php the_ID(); ?> -->
-	</article>
+		</div>
+	</article><!-- #post-<?php the_ID(); ?> -->
 </div>

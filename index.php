@@ -44,19 +44,18 @@ get_header();
 				?>
 					<div class="posts-container">
 						<?php
-						get_template_part( 'template-parts/content', get_post_type() );
+						get_template_part( 'template-parts/thumbnail', get_post_type() );
 						?>
 					</div>
 				<?php
 
 			endwhile;
 
-			the_posts_navigation();
 		
 
 		else :
 
-			get_template_part( 'template-parts/content', 'none' );
+			get_template_part( 'template-parts/thumbnail', 'none' );
 
 		endif;
 		?>

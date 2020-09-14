@@ -86,6 +86,7 @@ body {
  */
 main {
   display: block;
+  margin: 0 auto;
 }
 
 /**
@@ -113,7 +114,7 @@ h4 {
   color: #0f2d7b;
 }
 p {
-  font-size: 36px;
+  font-size: 18px;
   margin: 0.67em 0;
   color: #06184a;
 }
@@ -123,32 +124,8 @@ span {
 a {
   color: #06184a;
   padding: 0 0 0px;
-  margin: 5px 0;
+  margin: 0;
   text-decoration: none;
-  position: relative;
-  display: inline-block;
-  outline: none;
-  text-decoration: none;
-  text-shadow: 0 0 1px rgba(255, 255, 255, 0.3);
-}
-
-a::after {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  height: 1px;
-  background: #06184a;
-  content: "";
-  opacity: 0;
-  transition: height 0.3s, opacity 0.3s, transform 0.3s;
-  transform: translateY(-5px);
-}
-a:hover::after,
-a:focus::after {
-  height: 2px;
-  opacity: 1;
-  transform: translateY(0px);
 }
 
 a:hover,
@@ -175,10 +152,9 @@ h2 a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 0;
+  margin: 0 0 60px 0;
   width: 100%;
   height: 400px;
-  margin: 0;
 }
 .big-header h1 {
   margin: 0;
@@ -194,8 +170,8 @@ h2 a {
   align-items: center;
   width: 100%;
   height: 100px;
-  margin: 0;
-  padding: 15px;
+  margin: 0 0 60px 0;
+  padding: 15px 0;
 }
 .little-header .custom-logo {
   height: 30px;
@@ -209,22 +185,51 @@ h2 a {
   justify-content: center;
   align-items: center;
 }
-
-/* Recipe Container */
 .container {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   max-width: 1200px;
-  margin: 50px 100px;
+  padding: 0 50px;
 }
-.post-thumbnail {
-  margin: 30px;
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  max-width: 1200px;
+  margin: 50px;
+  padding: 0 50px;
 }
-.post-image-container {
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+img.attachment-post-thumbnail.size-post-thumbnail.wp-post-image {
   width: 200px;
   height: 150px;
   overflow: hidden;
+  border-radius: 4px;
+  margin: 0;
+}
+.post-card {
+  border-radius: 4px;
+  margin: 0 30px 30px 30px;
+  padding: 0;
+  width: 200px;
+  box-shadow: 0 0 15px #bea481;
+}
+.post-info {
+  padding: 5px;
+  padding-bottom: 0;
+}
+.post-content {
+  padding: 5px;
+  padding-top: 0;
+}
+a.post-thumbnail {
+  margin: 0;
 }
 
 .posts-container h2 {
@@ -558,10 +563,6 @@ h6 {
   clear: both;
 }
 
-p {
-  margin-bottom: 1.5em;
-}
-
 dfn,
 cite,
 em,
@@ -844,16 +845,26 @@ textarea {
 .comment-navigation .nav-previous,
 .posts-navigation .nav-previous,
 .post-navigation .nav-previous {
-  flex: 1 0 50%;
+  padding: 10px;
+  background-color: #0f2d7b;
+  color: #fff;
+  border-radius: 4px;
+  margin: 50px;
 }
 
 .comment-navigation .nav-next,
 .posts-navigation .nav-next,
 .post-navigation .nav-next {
-  text-align: end;
-  flex: 1 0 50%;
+  padding: 10px;
+  background-color: #0f2d7b;
+  color: #fff;
+  border-radius: 4px;
+  margin: 50px;
 }
 
+.nav-links a span {
+  color: #fff;
+}
 /* Posts and pages
 --------------------------------------------- */
 .sticky {
