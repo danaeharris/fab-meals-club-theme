@@ -9,8 +9,10 @@
 
 ?>
 <div class="post-card">
-	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<?php example_post_thumbnail(); ?>
+    <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+    <div class="post-image">
+        <?php example_post_thumbnail(); ?>
+    </div>
 		<div class="post-info">
 			<?php
 			if ( is_singular() ) :

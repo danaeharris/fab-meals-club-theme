@@ -191,12 +191,21 @@ h2 a {
   max-width: 1200px;
   padding: 0 50px;
 }
+
+.recipe-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  padding: 0 50px;
+  margin: 0 auto;
+}
+
 .flex-row {
   display: flex;
   flex-direction: row;
   max-width: 1200px;
   margin: 50px;
-  padding: 0 50px;
 }
 
 .flex-column {
@@ -205,11 +214,17 @@ h2 a {
   align-items: center;
   justify-content: center;
 }
+.post-image {
+  width: 200px;
+  max-height: 150px;
+  overflow: hidden;
+}
+
+h2.entry-title {
+  line-height: 15px;
+}
 
 img.attachment-post-thumbnail.size-post-thumbnail.wp-post-image {
-  width: 200px;
-  height: 150px;
-  overflow: hidden;
   border-radius: 4px;
   margin: 0;
 }
@@ -244,6 +259,17 @@ a.post-thumbnail {
 }
 .entry-title {
   margin: 0;
+}
+
+.blog-post {
+  margin: 30px 0;
+}
+.blog-post a {
+  color: #21449d;
+}
+.blog-post a:hover,
+.blog-post a:active {
+  color: #0f2d7b;
 }
 /* Grouping content
 	 ========================================================================== */

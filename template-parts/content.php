@@ -31,9 +31,9 @@
 				</div>
 				<div class="blog-post">
 				<?php echo get_post_meta($post->ID, 'blog_post', true); ?>
-				<p>Check out the full recipe at the original blog post</p>
+				<span>Check out the full recipe at the original blog post</span>
 				<a href=<?php echo get_post_meta($post->ID, 'recipe_link', true); ?>>
-					<?php echo " " . get_post_meta($post->ID, 'slug', true); ?>
+					<?php echo " " . get_post_meta($post->ID, 'slug', true) . "."; ?>
 				</a>
 				
 				</div>

@@ -29,7 +29,7 @@ get_header();
 			endif;
 			?>
 
-			<div class="container">
+			<div class="recipe-container">
 			<?php
 			/* Start the Loop */
 			while ( have_posts() ) :
@@ -50,7 +50,6 @@ get_header();
 				<?php
 
 			endwhile;
-
 		
 
 		else :
