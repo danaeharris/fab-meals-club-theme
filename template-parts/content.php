@@ -8,7 +8,6 @@
  */
 
 ?>
-<div class="container">
 	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<?php example_post_thumbnail(); ?>
 		<div>
@@ -70,4 +69,3 @@
 		</footer><!-- .entry-footer -->
 	<!-- #post-<?php the_ID(); ?> -->
 	</article>
-</div>

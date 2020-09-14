@@ -160,10 +160,12 @@ h2 a {
 .big-header h1 {
   margin: 0;
   text-align: center;
+  color: #21449d;
 }
 .big-header p {
   margin: 0;
   text-align: center;
+  color: #21449d;
 }
 
 /* LITTLE HEADER */
@@ -175,6 +177,7 @@ h2 a {
   height: 100px;
   margin: 0 0 60px 0;
   padding: 15px 0;
+  color: #21449d;
 }
 .little-header .custom-logo {
   height: 30px;
@@ -207,11 +210,11 @@ h2 a {
 .flex-row {
   display: flex;
   flex-direction: row;
-  max-width: 1200px;
-  margin: 50px;
+  max-width: 1300px;
 }
 
 .flex-column {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -878,7 +881,6 @@ textarea {
   background-color: #0f2d7b;
   color: #fff;
   border-radius: 4px;
-  margin: 50px;
 }
 
 .comment-navigation .nav-next,
@@ -888,7 +890,6 @@ textarea {
   background-color: #0f2d7b;
   color: #fff;
   border-radius: 4px;
-  margin: 50px;
 }
 
 .nav-links a span {
