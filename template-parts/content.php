@@ -9,7 +9,11 @@
 
 ?>
 	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+	<div class="row">
+	<div class="col">
 	<?php example_post_thumbnail(); ?>
+</div>
+<div class="col">
 		<div>
 			<?php
 			if ( is_singular() ) :
@@ -63,6 +67,8 @@
 			);
 			?>
 		</div><!-- .entry-content -->
+		</div>
+		</div>
 
 		<footer class="entry-footer">
 			<?php example_entry_footer(); ?>

@@ -29,7 +29,7 @@
 				?>
 				<div class="big-header" style="background: url(<?=get_header_image() ?>)  center top/cover no-repeat;" >
 					<div class="container">	
-						<div class="flex-column">
+						<div class="flex-column"  style="align-items: center; justify-content: center;">
 							<?=the_custom_logo();?>
 							<h1 class="site-title" style="margin: 0;"><a style="text-decoration: none;" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 							<?php

@@ -86,7 +86,7 @@ body {
  */
 main {
   display: block;
-  margin: 0 auto;
+  margin: 0 auto 200px auto;
 }
 
 /**
@@ -223,8 +223,6 @@ h2 a {
   width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 .post-image {
   width: 200px;
@@ -279,6 +277,24 @@ a.post-thumbnail {
 .blog-post a:active {
   color: #0f2d7b;
 }
+
+/* Footer */
+.site-footer {
+  background-color: #f8e5d0;
+}
+.site-footer .site-info {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.site-info p {
+  color: #0f2d7b;
+  font-size: 16px;
+  opacity: 0.6;
+}
+
 /* Grouping content
 	 ========================================================================== */
 
@@ -875,6 +891,7 @@ textarea {
 .posts-navigation .nav-links,
 .post-navigation .nav-links {
   display: flex;
+  justify-content: space-between;
 }
 
 .comment-navigation .nav-previous,
