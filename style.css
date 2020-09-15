@@ -128,6 +128,10 @@ a {
   text-decoration: none;
 }
 
+.page-title span {
+  color: #0f2d7b;
+}
+
 a:hover,
 a:focus,
 a:active {
@@ -160,14 +164,16 @@ h2 a {
 .big-header h1 {
   margin: 0;
   text-align: center;
-  color: #21449d;
+  color: #0f2d7b;
 }
 .big-header p {
   margin: 0;
   text-align: center;
-  color: #21449d;
+  color: #0f2d7b;
 }
-
+.site-title a {
+  color: #0f2d7b;
+}
 /* LITTLE HEADER */
 .little-header {
   display: flex;
@@ -224,10 +230,6 @@ h2 a {
   width: 200px;
   max-height: 150px;
   overflow: hidden;
-}
-
-h2.entry-title {
-  line-height: 15px;
 }
 
 img.attachment-post-thumbnail.size-post-thumbnail.wp-post-image {
@@ -579,7 +581,7 @@ input,
 select,
 optgroup,
 textarea {
-  color: #404040;
+  color: #041238;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   font-size: 1rem;
@@ -711,10 +713,10 @@ input[type="button"],
 input[type="reset"],
 input[type="submit"] {
   border: 1px solid;
-  border-color: #ccc #ccc #bbb;
+  border-color: #0f2d7b;
   border-radius: 3px;
-  background: #e6e6e6;
-  color: rgba(0, 0, 0, 0.8);
+  background: #0f2d7b;
+  color: #fff;
   line-height: 1;
   padding: 0.6em 1em 0.4em;
 }
@@ -723,7 +725,8 @@ button:hover,
 input[type="button"]:hover,
 input[type="reset"]:hover,
 input[type="submit"]:hover {
-  border-color: #ccc #bbb #aaa;
+  border-color: #081843;
+  background: #081843;
 }
 
 button:active,
@@ -734,7 +737,7 @@ input[type="reset"]:active,
 input[type="reset"]:focus,
 input[type="submit"]:active,
 input[type="submit"]:focus {
-  border-color: #aaa #bbb #bbb;
+  border-color: #081843;
 }
 
 input[type="text"],
@@ -753,8 +756,8 @@ input[type="datetime"],
 input[type="datetime-local"],
 input[type="color"],
 textarea {
-  color: #666;
-  border: 1px solid #ccc;
+  color: #041238;
+  border: 1px solid rgba(15, 45, 123, 0.4);
   border-radius: 3px;
   padding: 3px;
 }
@@ -775,7 +778,7 @@ input[type="datetime"]:focus,
 input[type="datetime-local"]:focus,
 input[type="color"]:focus,
 textarea:focus {
-  color: #111;
+  color: #041238;
 }
 
 select {
@@ -891,7 +894,28 @@ textarea {
   color: #fff;
   border-radius: 4px;
 }
+.comment-navigation .nav-previous,
+.posts-navigation .nav-previous,
+.post-navigation .nav-previous:hover {
+  background-color: #081843;
+}
 
+.comment-navigation .nav-next,
+.posts-navigation .nav-next,
+.post-navigation .nav-next:hover {
+  background-color: #081843;
+}
+.comment-navigation .nav-previous,
+.posts-navigation .nav-previous,
+.post-navigation .nav-previous:active {
+  background-color: #081843;
+}
+
+.comment-navigation .nav-next,
+.posts-navigation .nav-next,
+.post-navigation .nav-next:active {
+  background-color: #081843;
+}
 .nav-links a span {
   color: #fff;
 }
