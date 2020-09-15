@@ -38,15 +38,18 @@
 							?>
 									<p class="site-description"><?php echo $example_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
 							<?php endif; ?>
+							<div class="search">
+								<?php echo do_shortcode( '[searchandfilter fields="search,post_tag"]' ); ?>
 							</div>
 						</div>
+					</div>
 				</div>
 				<?php
 			else :
 				?>
 				<div class="little-header" style="background: url(<?=get_header_image() ?>)  center top/cover no-repeat;" >
 				<div class="container">	
-				<div class="flex-row">
+					<div class="flex-row">
 						<?=the_custom_logo();?>
 						<h1 class="site-title" style="margin: 0;"><a style="text-decoration: none;" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 					</div>				
