@@ -28,17 +28,19 @@
 			if ( is_front_page() && is_home() ) :
 				?>
 				<div class="big-header" style="background: url(<?=get_header_image() ?>)  center top/cover no-repeat;" >
-					<div class="container">	
-						<div class="flex-column"  style="align-items: center; justify-content: center;">
-							<?=the_custom_logo();?>
-							<h1 class="site-title" style="margin: 0;"><a style="text-decoration: none;" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+					<div class="container">
+						<div class="header-column">
+							<div class="mobile-logo">
+								<?=the_custom_logo();?>
+								<h1 class="site-title" style="margin: 0;"><a style="text-decoration: none;" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+							</div>
 							<?php
 								$example_description = get_bloginfo( 'description', 'display' );
 								if ($example_description || is_customize_preview()) :
 							?>
 									<p class="site-description"><?php echo $example_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
 							<?php endif; ?>
-							<div class="search">
+							<div class="custom-search">
 								<?php echo do_shortcode( '[searchandfilter fields="search,post_tag"]' ); ?>
 							</div>
 						</div>
@@ -49,7 +51,7 @@
 				?>
 				<div class="little-header" style="background: url(<?=get_header_image() ?>)  center top/cover no-repeat;" >
 				<div class="container">	
-					<div class="flex-row">
+					<div class="flex-row align">
 						<?=the_custom_logo();?>
 						<h1 class="site-title" style="margin: 0;"><a style="text-decoration: none;" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 					</div>				
