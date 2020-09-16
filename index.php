@@ -29,6 +29,7 @@ get_header();
 			endif;
 			?>
 
+			<div class="container">
 			<div class="recipe-container">
 			<?php
 			/* Start the Loop */
@@ -58,6 +59,7 @@ get_header();
 
 		endif;
 		?>
+		</div> 
 		</div> 
 
 	</main><!-- #main -->
