@@ -512,6 +512,17 @@ a.post-thumbnail {
 }
 
 @media screen and (max-width: 380px) {
+  .big-header {
+    height: auto;
+    padding-bottom: 20px;
+  }
+  .big-header p {
+    padding-bottom: 15px;
+  }
+  .searchandfilter div ul {
+    padding-top: 10px;
+    padding-bottom: 0;
+  }
   .little-header .custom-logo {
     height: 25px;
     width: 25px;
